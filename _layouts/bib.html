@@ -1,6 +1,14 @@
 ---
 ---
 <!-- _layouts/bib.html -->
+      <head>
+        <style>
+            /* Adding gap between rows */
+            .row {
+                margin-bottom: 20px; /* Adds 20px space between each BibTeX row */
+            }
+        </style>
+      </head>
       <div class="row">
         <div class="col-sm-2 {% if entry.preview %}preview{% else %}abbr{% endif %}">
         {%- if entry.preview -%}
