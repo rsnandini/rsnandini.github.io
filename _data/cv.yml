@@ -2,18 +2,18 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
+      value: Rajnandini Sharma
     - name: Date of Birth
-      value: 14th March 1879
+      value: 14th Dec 1993
     - name: Languages
-      value: English, German
+      value: English, Hindi, marwadi
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: Ph.D.
+      institution: Indian Institute of Technology (BHU)
+      year: 2024
       description:
         - Description 1.
         - Description 2.
