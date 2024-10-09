@@ -1,7 +1,7 @@
 ---
 layout: page
-permalink: /teaching_talks/
-title: Teaching & Talks
+permalink: /Conferences and Workshops/
+title: Conferences and Workshops
 # description: Teaching & Talks
 nav: true
 nav_order: 5
