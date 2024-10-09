@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Effect of swift heavy ion irradiation (SHI) on structural and magnetic properties of nanocrystalline spinel ferrites
-#description: Data-efficient machine learning
+title: Ion Irradiation
+description: Effect of swift heavy ion irradiation (SHI) on structural and magnetic properties of nanocrystalline spinel ferrites
 img: assets/img/projects/Project.png
 importance: 1
 category: Project

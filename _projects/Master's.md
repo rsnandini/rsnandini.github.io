@@ -1,8 +1,7 @@
 ---
 layout: page
-title: Temperature-dependent Raman spectroscopic studies of LaFeO<sub>3</sub> and LaMnO<sub>3</sub> across magnetic order
-#description: Robust traing against data poisoning
-img: assets/img/projects/Master's.png
+title: Raman Spectroscopy
+description: Temperature-dependent Raman spectroscopic studies of LaFeO<sub>3</sub> and LaMnO<sub>3</sub> across magnetic order
 # redirect: assets/img/attack.png
 importance: 3
 category: Master's
