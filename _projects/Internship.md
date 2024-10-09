@@ -2,7 +2,7 @@
 layout: page
 title: Raman Scattering
 description: Calibration of polychromator for Thomson scattering using Raman scattering
-img: assets/img/projects/spurious.png
+img: assets/img/projects/Internship.png
 importance: 4
 category: Internship
 ---
@@ -16,7 +16,4 @@ I have worked as a summer intern at the <b>Institute for Plasma research, Gandhi
 	    {% include figure.html path="assets/img/projects/Internship.png" class="img-fluid rounded z-depth-1" %}
 	</div>
 </div>
-<!-- <div class="caption">
-    This image can also have a caption. It's like magic.
-</div> -->
 

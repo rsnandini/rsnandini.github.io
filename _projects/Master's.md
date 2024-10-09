@@ -2,7 +2,7 @@
 layout: page
 title: Raman Spectroscopy
 description: Temperature-dependent Raman spectroscopic studies of LaFeO<sub>3</sub> and LaMnO<sub>3</sub> across magnetic order
-# redirect: assets/img/attack.png
+img: assets/img/projects/Master's.png
 importance: 3
 category: Master's
 ---
@@ -14,8 +14,6 @@ This project was conducted at UGC- DAE Consortium for Scientific Research, Indor
 	    {% include figure.html path="assets/img/projects/Master's.png" class="img-fluid rounded z-depth-1" %}
 	</div>
 </div>
-<!-- <div class="caption">
-    This image can also have a caption. It's like magic.
-</div> -->
+
 
 
