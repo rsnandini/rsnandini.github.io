@@ -5,7 +5,7 @@ permalink: /
 #subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
 
 profile:
-  align: right
+  align: justify
   image: rajnandini.jpg
   image_circular: false # crops the image to make it circular
   address: >
@@ -16,11 +16,11 @@ profile:
 
 news: true  # includes a list of news items
 # latest_posts: true  # includes a list of the newest posts
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am a Postdoctoral research fellow in the [Computer Science Department](https://www.cs.ucla.edu/) at [UCLA](https://www.ucla.edu/), where I lead the [BigML](http://web.cs.ucla.edu/~baharan/research.htm) research group.
+I am a Postdoctoral research fellow in the [Department of Physics and Astronomy](https://physics.howard.edu/) at [Howard University](https://howard.edu/), where I work in the [Quantum Materials Modeling Lab](https://sites.google.com/view/sugatachowdhury/home).
                     
 My research aims to address [sustainability, reliability, and efficiency](https://baharanm.github.io/projects/) of machine learning. I am mainly working on improving the <b>big data quality</b>, by developing theoretically rigorous methods to select the most beneficial data for [efficient](projects/#efficiency) and [robust](projects/#robustness) learning. Besides, I am also interested in improving the models and learning algorithms. The resulting methods are broadly applicable for learning from massive datasets across a wide range of applications, such as medical diagnosis and environment sensing.
 
