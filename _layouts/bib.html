@@ -195,6 +195,9 @@
           {%- if entry.website %}
             <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
           {%- endif %}
+          {%- if entry.doi %}
+            <a href="{{ entry.doi }}" class="btn btn-sm z-depth-0" role="button">Doi</a>
+          {%- endif %}
           <!-- {%- if entry.award %}
             <div lass="award"><b><span style="color:#DF5279">{{entry.award}}</span></b></div>
           {%- endif %} -->
