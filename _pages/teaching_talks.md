@@ -7,7 +7,7 @@ nav: true
 nav_order: 5
 ---
 
-```html
+
 <h2>Workshops and Conferences Attended</h2>
 
 <ul>
