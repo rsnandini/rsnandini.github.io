@@ -15,7 +15,7 @@ nav_order: 5
         <h3>2023</h3>
         <ul>
             <li>Workshop on Advanced Machine Learning - January 2023</li>
-            <li>International Conference on Data Science - March 2023</li>
+            <li>Poland conference - March 2023</li>
         </ul>
     </li>
     <li>
