@@ -6,4 +6,3 @@ related_posts: false
 ---
 
 I have started my Postdoctoral Research Journey from this day. :sparkles: :smile:
-I am working in the experimental lab here in Washington D.C. area.
