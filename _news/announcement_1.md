@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I have received the provisional letter of the INSPIRE fellowship.
+I have received the provisional letter of the INSPIRE fellowship to do my Ph.D.
