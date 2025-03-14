@@ -7,4 +7,4 @@ related_posts: false
 
 <!-- A simple inline announcement with Markdown emoji! :sparkles: :smile: -->
 
-I have enrolled in IIT(BHU) for the Ph.D. in Materials Science and Technology :sparkles:
+I have enrolled in [IIT(BHU)](https://iitbhu.ac.in/dept/mst) for the Ph.D. in Materials Science and Technology :sparkles:
