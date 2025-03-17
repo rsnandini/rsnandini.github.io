@@ -45,7 +45,7 @@ nav_order: 5
             <li><b>Recent Advancement in Sustainable Materials (GC-RASM 2022)</b></li>
             <ul>
                 <li>Mangalore, Karnata, India - July 2022</li>
-                <li>Oral Presentation</li>
+                <li>Talk Presented</li>
             </ul>
             <li><b>International Conference on Higher Education Research and Innovation (ICHERI'22)</b></li>
             <ul>
