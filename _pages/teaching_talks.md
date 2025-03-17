@@ -14,13 +14,13 @@ nav_order: 5
     <li>
         <h3>2025</h3>
         <ul>
-            <li>APS Global Physics Summit 2025</li>
+            <li><b>APS Global Physics Summit 2025</b></li>
             <ul>
                 <li>Anaheim, CA, USA - March 2025</li>
                 <li>Poster Presented</li>
             </ul>
+        </ul>
     </li>
-    <li>
     <li>
         <h3>2023</h3>
         <ul>
