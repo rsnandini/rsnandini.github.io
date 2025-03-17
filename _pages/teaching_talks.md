@@ -16,7 +16,7 @@ nav_order: 5
         <ul>
             <li>
                 <b>APS Global Physics Summit 2025</b>
-                <img src="assets/img/logo/aps2025.jpeg" alt="APS Global Physics Summit 2025 Logo" style="width:30px;height:30px;vertical-align:middle;margin-left:10px;">
+                <img src="/assets/img/logo/aps2025.jpg" alt="APS Global Physics Summit 2025 Logo" style="width:30px;height:30px;vertical-align:middle;margin-left:10px;">
             </li>
             <ul>
                 <li>Anaheim, CA, USA - March 2025</li>
