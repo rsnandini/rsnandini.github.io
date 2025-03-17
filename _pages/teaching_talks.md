@@ -14,8 +14,14 @@ nav_order: 5
     <li>
         <h3>2023</h3>
         <ul>
-            <li>Workshop on Advanced Machine Learning - January 2023</li>
-            <li>Poland conference - March 2023</li>
+            <li>MagIC + Magnetism, Interactions and Complexity 2023</li>
+            <ul>
+                <li>Bedlevo, Poland - March 2023</li>
+            </ul>
+            <li>8^{th} International Conference on Nanomaterials for Better Living (NBL 2023)</li>
+            <ul>
+                <li>Srinagar, Kashmir, India - January 2023</li>
+            </ul>
         </ul>
     </li>
     <li>
