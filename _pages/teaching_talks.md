@@ -8,7 +8,7 @@ nav_order: 5
 ---
 
 
-<h2>Workshops and Conferences Attended</h2>
+<h2>Conferences Attended</h2>
 
 <ul>
     <li>
@@ -60,25 +60,14 @@ nav_order: 5
             <ul>
                 <li>Virtually - December 2021</li>
             </ul>
-            </li>
         </ul>
     </li>
     <li>
         <h3>2019</h3>
         <ul>
-            <li><b>International Conference on Functional Nano,aterials 2019</b></li>
+            <li><b>International Conference on Functional Nanomaterials 2019</b></li>
             <ul>
                 <li>Dept. of Physics, IIT (BHU), Varanasi, India - February 2019</li>
-                <li>Poster Presented</li>
-            </ul>
-        </ul>
-    </li>
-    <li>
-        <h3>2019</h3>
-        <ul>
-            <li><b>Global Conference on Nanotechnology (GCN 2019)</b></li>
-            <ul>
-                <li>Berlin, Germany - June 2019</li>
                 <li>Poster Presented</li>
             </ul>
         </ul>
@@ -95,6 +84,37 @@ nav_order: 5
             <ul>
                 <li>Devi Ahilya Vishwavidyalaya, Indore, India - 2017</li>
                 <li>Poster Presented</li>
+            </ul>
+        </ul>
+    </li>
+</ul>
+
+<h2>Workshops Attended</h2>
+
+<ul>
+    <li>
+        <h3>2019</h3>
+        <ul>
+            <li>
+                <b>The European School on Magnetism 2019 (Experimental Techniques)</b>
+           </li>
+            <ul>
+                <li>Brno, Czech Republic - September 2019</li>
+                <li>Poster Presented</li>
+            </ul>
+        </ul>
+    </li>
+    <li>
+        <h3>2017</h3>
+        <ul>
+            <li><b>First order phase transition workshop 2017</b></li>
+            <ul>
+                <li>UGC - DAE CSR, Indore, India - 2017</li>
+            </ul>
+            <li><b>M.P. Young Scientist Congress and Associated Events 2017</b></li>
+            <ul>
+                <li>Advance course on <b> Research Methodology and Scientific paper Writing</b></li>
+                <li>M.P. Council of Science and Technology, Bhopal, India</li>
             </ul>
         </ul>
     </li>
