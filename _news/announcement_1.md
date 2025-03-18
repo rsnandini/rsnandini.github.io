@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I have received the provisional letter of the INSPIRE fellowship to do my Ph.D.
+I have received the INSPIRE fellowship to do my Ph.D. from Dept. of Science and Technology, Government of India. 

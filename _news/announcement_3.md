@@ -7,4 +7,4 @@ related_posts: false
 
 <!-- A simple inline announcement with Markdown emoji! :sparkles: :smile: -->
 
-I have honored with the INSPIRE Fellow for 23^{rd} August 2018 to 23^{rd} August 2023. 
+I was honored as the INSPIRE Fellow from 23rd August 2018 to 23rd August 2023. 
