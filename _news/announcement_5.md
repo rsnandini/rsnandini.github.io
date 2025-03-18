@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I had won the **Best Poster** award in International Conference on Nanomaterials for Better Living (NBL 2023). :sparkles: :smile:
+I had won the **Best Poster Award** in International Conference on Nanomaterials for Better Living (NBL 2023). :sparkles: :smile:
