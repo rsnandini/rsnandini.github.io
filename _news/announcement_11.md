@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I have started my Postdoctoral Research Journey from this day. :sparkles: :smile:
+I have started my Postdoctoral Research in [Quantum Materials Modeling Lab](https://sites.google.com/view/sugatachowdhury/home).
