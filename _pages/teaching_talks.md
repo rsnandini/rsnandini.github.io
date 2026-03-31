@@ -7,12 +7,11 @@ nav: true
 nav_order: 5
 ---
 <div>
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Conferences and Workshops</title>
+  <!-- <title>Conferences and Workshops</title> -->
   <style>
     :root {
       --theme-primary: #17a2b8;
