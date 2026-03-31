@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /Conferences and Workshops/
-title: Conferences & Workshops
+# title: Conferences & Workshops
 # description: Teaching & Talks
 nav: true
 nav_order: 5
