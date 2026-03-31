@@ -219,15 +219,15 @@ nav_order: 5
   </style>
 </head>
 <body>
-  <section class="section-wrap">
+  <!-- <section class="section-wrap">
     <div class="section-header">
-      <!-- <span class="eyebrow">Academic Journey</span>
+       <span class="eyebrow">Academic Journey</span>
       <h1>Conferences & Workshops</h1>
       <p>
         A curated timeline of conferences and workshops attended, highlighting research presentations,
         professional development, and international academic engagement. -->
-      </p>
-    </div>
+      <!-- </p> -->
+    </div> -->
 
     <div class="grid">
       <article class="panel">
