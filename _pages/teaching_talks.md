@@ -227,7 +227,7 @@ nav_order: 5
         A curated timeline of conferences and workshops attended, highlighting research presentations,
         professional development, and international academic engagement. -->
       <!-- </p> -->
-    </div> -->
+    <!-- </div> --> 
 
     <div class="grid">
       <article class="panel">
