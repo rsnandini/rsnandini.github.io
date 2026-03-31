@@ -1,8 +1,9 @@
 ---
 layout: page
 permalink: /Conferences and Workshops/
-# title: Conferences & Workshops
-# description: Teaching & Talks
+title: Conferences & Workshops
+description: A curated timeline of conferences and workshops attended, highlighting research presentations,
+        professional development, and international academic engagement.
 nav: true
 nav_order: 5
 ---
@@ -11,7 +12,7 @@ nav_order: 5
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- <title>Conferences and Workshops</title> -->
+  <title>Conferences and Workshops</title>
   <style>
     :root {
       --theme-primary: #17a2b8;
@@ -220,11 +221,11 @@ nav_order: 5
 <body>
   <section class="section-wrap">
     <div class="section-header">
-      <span class="eyebrow">Academic Journey</span>
+      <!-- <span class="eyebrow">Academic Journey</span>
       <h1>Conferences & Workshops</h1>
       <p>
         A curated timeline of conferences and workshops attended, highlighting research presentations,
-        professional development, and international academic engagement.
+        professional development, and international academic engagement. -->
       </p>
     </div>
 
