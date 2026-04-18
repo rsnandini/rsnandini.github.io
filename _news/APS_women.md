@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I was selected to attend the **[Conference for Graduate Women and Gender Minorities in Physics]**(https://www.aps.org/events/2025/conference-graduate-women-gender-minorities/) organized by **[APS]**(https://www.aps.org/) in Washington, DC.
+I was selected to attend the **[Conference for Graduate Women and Gender Minorities in Physics](https://www.aps.org/events/2025/conference-graduate-women-gender-minorities/)** organized by **[APS](https://www.aps.org/)** in Washington, DC.

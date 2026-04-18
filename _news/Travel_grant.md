@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I was granted **International Travel Grant** which is granded by Science and Engineering board, *Government of India*, New Delhi :sparkles: :smile:
+I was granted **International Travel Grant** which is granded by Science and Engineering board, **Government of India**, New Delhi :sparkles: :smile:
