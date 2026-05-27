@@ -6,7 +6,7 @@ permalink: /
 
 profile:
   align: justify
-  image: rajnandini.webp
+  image: rajnandini.png
   image_circular: false # crops the image to make it circular
   address: >
     <p>Department of Physics & Astronomy</p>
