@@ -10,26 +10,160 @@ layout: default
           </header>
 
           <article>
-            <div class="cv">
-              {% for entry in site.data.cv %}
-                <div class="card mt-3 p-3">
-                  <h3 class="card-title font-weight-medium">{{ entry.title }}</h3>
-                  <div>
-                  {% if entry.type == "list" %}
-                    {% include cv/list.html %}
-                  {% elsif entry.type == "map" %}
-                    {% include cv/map.html %}
-                  {% elsif entry.type == "nested_list" %}
-                    {% include cv/nested_list.html %}
-                  {% elsif entry.type == "time_table" %}
-                   {% include cv/time_table.html %}
-                  {% else %}
-                    {{ entry.contents }}
-                  {% endif %}
+            <div class="cv-container">
+              <!-- Table of Contents Sidebar -->
+              <nav class="cv-toc">
+                <ul class="cv-toc-list">
+                  {% for entry in site.data.cv %}
+                    <li class="cv-toc-item">
+                      <a href="#{{ entry.title | slugify }}" class="cv-toc-link">{{ entry.title }}</a>
+                    </li>
+                  {% endfor %}
+                </ul>
+              </nav>
+
+              <!-- CV Content -->
+              <div class="cv">
+                {% for entry in site.data.cv %}
+                  <div class="card mt-3 p-3" id="{{ entry.title | slugify }}">
+                    <h3 class="card-title font-weight-medium">{{ entry.title }}</h3>
+                    <div>
+                    {% if entry.type == "list" %}
+                      {% include cv/list.html %}
+                    {% elsif entry.type == "map" %}
+                      {% include cv/map.html %}
+                    {% elsif entry.type == "nested_list" %}
+                      {% include cv/nested_list.html %}
+                    {% elsif entry.type == "time_table" %}
+                     {% include cv/time_table.html %}
+                    {% else %}
+                      {{ entry.contents }}
+                    {% endif %}
+                    </div>
                   </div>
-                </div>
-              {% endfor %}
+                {% endfor %}
               </div>
+            </div>
           </article>
 
         </div>
+
+        <style>
+          .cv-container {
+            display: flex;
+            gap: 2rem;
+            position: relative;
+          }
+
+          .cv-toc {
+            position: sticky;
+            top: 80px;
+            align-self: flex-start;
+            min-width: 200px;
+            max-width: 250px;
+            height: fit-content;
+          }
+
+          .cv-toc-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+          }
+
+          .cv-toc-item {
+            margin-bottom: 0.5rem;
+          }
+
+          .cv-toc-link {
+            display: block;
+            padding: 0.5rem 1rem;
+            color: var(--global-text-color);
+            text-decoration: none;
+            border-left: 2px solid transparent;
+            transition: all 0.2s ease;
+            font-size: 0.9rem;
+          }
+
+          .cv-toc-link:hover {
+            color: var(--global-theme-color);
+            border-left-color: var(--global-theme-color);
+            background-color: var(--global-bg-color);
+          }
+
+          .cv-toc-link.active {
+            color: var(--global-theme-color);
+            border-left-color: var(--global-theme-color);
+            font-weight: 600;
+          }
+
+          .cv {
+            flex: 1;
+            min-width: 0;
+          }
+
+          /* Mobile responsive */
+          @media (max-width: 768px) {
+            .cv-container {
+              flex-direction: column;
+            }
+
+            .cv-toc {
+              position: relative;
+              top: 0;
+              max-width: 100%;
+              margin-bottom: 1rem;
+            }
+
+            .cv-toc-list {
+              display: flex;
+              flex-wrap: wrap;
+              gap: 0.5rem;
+            }
+
+            .cv-toc-link {
+              border-left: none;
+              border-bottom: 2px solid transparent;
+              padding: 0.5rem;
+            }
+
+            .cv-toc-link:hover,
+            .cv-toc-link.active {
+              border-left: none;
+              border-bottom-color: var(--global-theme-color);
+            }
+          }
+
+          /* Smooth scrolling */
+          html {
+            scroll-behavior: smooth;
+          }
+        </style>
+
+        <script>
+          document.addEventListener('DOMContentLoaded', function() {
+            const tocLinks = document.querySelectorAll('.cv-toc-link');
+            const sections = document.querySelectorAll('.cv .card[id]');
+
+            // Highlight active section on scroll
+            function highlightTOC() {
+              let current = '';
+              sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.pageYOffset >= sectionTop - 100) {
+                  current = section.getAttribute('id');
+                }
+              });
+
+              tocLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                  link.classList.add('active');
+                }
+              });
+            }
+
+            window.addEventListener('scroll', highlightTOC);
+            highlightTOC(); // Initial highlight
+          });
+        </script>
