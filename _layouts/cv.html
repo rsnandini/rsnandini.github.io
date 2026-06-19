@@ -11,8 +11,13 @@ layout: default
 
           <article>
             <div class="cv-container">
+              <!-- Mobile TOC Toggle Button -->
+              <button class="cv-toc-toggle" id="tocToggle">
+                <i class="fas fa-bars"></i> Table of Contents
+              </button>
+
               <!-- Table of Contents Sidebar -->
-              <nav class="cv-toc">
+              <nav class="cv-toc" id="cvToc">
                 <ul class="cv-toc-list">
                   {% for entry in site.data.cv %}
                     <li class="cv-toc-item">
@@ -106,10 +111,37 @@ layout: default
             scroll-margin-top: 100px;
           }
 
+          /* Mobile TOC Toggle Button */
+          .cv-toc-toggle {
+            display: none;
+            width: 100%;
+            padding: 0.75rem 1rem;
+            margin-bottom: 1rem;
+            background-color: var(--global-theme-color);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+          }
+
+          .cv-toc-toggle:hover {
+            background-color: var(--global-hover-color);
+          }
+
+          .cv-toc-toggle i {
+            margin-right: 0.5rem;
+          }
+
           /* Mobile responsive */
           @media (max-width: 768px) {
             .cv-container {
               flex-direction: column;
+            }
+
+            .cv-toc-toggle {
+              display: block;
             }
 
             .cv-toc {
@@ -117,24 +149,38 @@ layout: default
               top: 0;
               max-width: 100%;
               margin-bottom: 1rem;
+              max-height: 0;
+              overflow: hidden;
+              transition: max-height 0.3s ease;
+            }
+
+            .cv-toc.active {
+              max-height: 500px;
+              margin-bottom: 1rem;
             }
 
             .cv-toc-list {
-              display: flex;
-              flex-wrap: wrap;
-              gap: 0.5rem;
+              display: block;
+              padding: 1rem;
+              background-color: var(--global-bg-color);
+              border: 1px solid var(--global-divider-color);
+              border-radius: 5px;
+            }
+
+            .cv-toc-item {
+              margin-bottom: 0.75rem;
             }
 
             .cv-toc-link {
-              border-left: none;
-              border-bottom: 2px solid transparent;
-              padding: 0.5rem;
+              border-left: 2px solid transparent;
+              border-bottom: none;
+              padding: 0.5rem 1rem;
             }
 
             .cv-toc-link:hover,
             .cv-toc-link.active {
-              border-left: none;
-              border-bottom-color: var(--global-theme-color);
+              border-left-color: var(--global-theme-color);
+              border-bottom: none;
             }
           }
 
@@ -148,6 +194,24 @@ layout: default
           document.addEventListener('DOMContentLoaded', function() {
             const tocLinks = document.querySelectorAll('.cv-toc-link');
             const sections = document.querySelectorAll('.cv .card[id]');
+            const tocToggle = document.getElementById('tocToggle');
+            const cvToc = document.getElementById('cvToc');
+
+            // Mobile TOC toggle
+            if (tocToggle) {
+              tocToggle.addEventListener('click', function() {
+                cvToc.classList.toggle('active');
+              });
+
+              // Close TOC when a link is clicked on mobile
+              tocLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                  if (window.innerWidth <= 768) {
+                    cvToc.classList.remove('active');
+                  }
+                });
+              });
+            }
 
             // Highlight active section on scroll
             function highlightTOC() {
