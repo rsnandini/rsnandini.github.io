@@ -16,7 +16,11 @@ layout: default
         <tr>
           <th scope="row">{{ post.date | date: "%b %-d, %Y" }}</th>
           <td>
-              <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+              {% if post.redirect %}
+                <a class="post-link" href="{{ post.redirect }}" target="_blank" rel="noopener noreferrer">{{ post.title }}</a>
+              {% else %}
+                <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+              {% endif %}
           </td>
         </tr>
       {% endfor %}
