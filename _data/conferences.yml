@@ -1,0 +1,71 @@
+- title: Conferences
+  type: time_table
+  contents:
+    - year: 2025
+      title: APS Global Physics Summit 2025
+      institution: Anaheim, CA, USA
+      items:
+        - Poster Presented
+
+    - year: 2023
+      title: MagIC + Magnetism, Interactions and Complexity 2023
+      institution: Bedlevo, Poland
+      items:
+        - Poster Presented
+
+    - year: 2023
+      title: 8th International Conference on Nanomaterials for Better Living (NBL 2023)
+      institution: Srinagar, Kashmir, India
+      items:
+        - Poster Presented
+
+    - year: 2022
+      title: Recent Advancement in Sustainable Materials (GC-RASM 2022)
+      institution: Mangalore, Karnataka, India
+      items:
+        - Talk Presented
+
+    - year: 2022
+      title: International Conference on Higher Education Research and Innovation (ICHERI'22)
+      institution: Virtual
+
+    - year: 2021
+      title: International Conference on Advanced Materials and Mechanical Characterization (ICAMMC) 2021
+      institution: Virtual
+
+    - year: 2019
+      title: International Conference on Functional Nanomaterials 2019
+      institution: IIT (BHU), Varanasi, India
+      items:
+        - Poster Presented
+
+    - year: 2017
+      title: 2nd International Conference on Condensed Matter and Applied Physics 2017
+      institution: Govt. Engineering College, Bikaner, India
+      items:
+        - Poster Presented
+
+    - year: 2017
+      title: 4th International Conference on Nano Structuring by Ion Beam 2017
+      institution: Devi Ahilya Vishwavidyalaya, Indore, India
+      items:
+        - Poster Presented
+
+- title: Workshops
+  type: time_table
+  contents:
+    - year: 2019
+      title: The European School on Magnetism 2019 (Experimental Techniques)
+      institution: Brno, Czech Republic
+      items:
+        - Poster Presented
+
+    - year: 2017
+      title: First Order Phase Transition Workshop 2017
+      institution: UGC-DAE CSR, Indore, India
+
+    - year: 2017
+      title: M.P. Young Scientist Congress 2017
+      institution: M.P. Council of Science and Technology, Bhopal, India
+      items:
+        - Advanced Course on Research Methodology & Scientific Paper Writing
