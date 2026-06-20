@@ -32,9 +32,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/github.css" media="" id="highlight_theme_light">
 
     
-    <!-- Sidebar Table of Contents -->
-    <link href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.css" rel="stylesheet">
-    
 
     <!-- Styles -->
     
@@ -123,15 +120,7 @@
     <!-- Content -->
     <div class="container mt-5">
       
-        
-        <div class="row">
-          <!-- sidebar, which will move to the top on a small screen -->
-          <div class="col-sm-3">
-            <nav id="toc-sidebar" class="sticky-top"></nav>
-          </div>
-          <!-- main content area -->
-          <div class="col-sm-9">
-            <!-- page.html -->
+        <!-- _layouts/conferences.html -->
         <div class="post">
 
           <header class="post-header">
@@ -140,144 +129,596 @@
           </header>
 
           <article>
-            <style>
-  .event-entry {
-    margin-bottom: 1.5rem;
-  }
+            <div class="cv-container">
+              <!-- Mobile TOC Toggle Button -->
+              <button class="cv-toc-toggle" id="tocToggle">
+                <i class="fas fa-bars"></i> Table of Contents
+              </button>
 
-  .event-entry h4 {
-    margin: 0 0 0.5rem 0;
-    font-size: 1.05rem;
-    font-weight: 600;
-    color: var(--global-text-color);
-  }
+              <!-- Table of Contents Sidebar -->
+              <nav class="cv-toc" id="cvToc">
+                <ul class="cv-toc-list">
+                  
+                    <li class="cv-toc-item">
+                      <a href="#conferences" class="cv-toc-link">Conferences</a>
+                    </li>
+                  
+                    <li class="cv-toc-item">
+                      <a href="#workshops" class="cv-toc-link">Workshops</a>
+                    </li>
+                  
+                </ul>
+              </nav>
 
-  .event-details {
-    color: var(--global-text-color-light);
-    font-size: 0.95rem;
-    line-height: 1.6;
-  }
-
-  .event-details p {
-    margin: 0.25rem 0;
-  }
-
-  .event-location {
-    font-style: italic;
-  }
-
-  .event-status {
-    font-weight: 600;
-    color: var(--global-theme-color);
-  }
-</style>
-
-<h2 id="conferences">Conferences</h2>
-
-<div class="event-entry">
-  <h4>APS Global Physics Summit 2025</h4>
-  <div class="event-details">
-    <p class="event-location">Anaheim, CA, USA | March 2025</p>
-    <p class="event-status">Poster Presented</p>
-  </div>
-</div>
-
-<div class="event-entry">
-  <h4>MagIC + Magnetism, Interactions and Complexity 2023</h4>
-  <div class="event-details">
-    <p class="event-location">Bedlevo, Poland | July 2023</p>
-    <p class="event-status">Poster Presented</p>
-  </div>
-</div>
-
-<div class="event-entry">
-  <h4>8th International Conference on Nanomaterials for Better Living (NBL 2023)</h4>
-  <div class="event-details">
-    <p class="event-location">Srinagar, Kashmir, India | May 2023</p>
-    <p class="event-status">Poster Presented</p>
-  </div>
-</div>
-
-<div class="event-entry">
-  <h4>Recent Advancement in Sustainable Materials (GC-RASM 2022)</h4>
-  <div class="event-details">
-    <p class="event-location">Mangalore, Karnataka, India | July 2022</p>
-    <p class="event-status">Talk Presented</p>
-  </div>
-</div>
-
-<div class="event-entry">
-  <h4>International Conference on Higher Education Research and Innovation (ICHERI'22)</h4>
-  <div class="event-details">
-    <p class="event-location">Virtual | November 2022</p>
-  </div>
-</div>
-
-<div class="event-entry">
-  <h4>International Conference on Advanced Materials and Mechanical Characterization (ICAMMC) 2021</h4>
-  <div class="event-details">
-    <p class="event-location">Virtual | December 2021</p>
-  </div>
-</div>
-
-<div class="event-entry">
-  <h4>International Conference on Functional Nanomaterials 2019</h4>
-  <div class="event-details">
-    <p class="event-location">IIT (BHU), Varanasi, India | February 2019</p>
-    <p class="event-status">Poster Presented</p>
-  </div>
-</div>
-
-<div class="event-entry">
-  <h4>2nd International Conference on Condensed Matter and Applied Physics 2017</h4>
-  <div class="event-details">
-    <p class="event-location">Govt. Engineering College, Bikaner, India | 2017</p>
-    <p class="event-status">Poster Presented</p>
-  </div>
-</div>
-
-<div class="event-entry">
-  <h4>4th International Conference on Nano Structuring by Ion Beam 2017</h4>
-  <div class="event-details">
-    <p class="event-location">Devi Ahilya Vishwavidyalaya, Indore, India | 2017</p>
-    <p class="event-status">Poster Presented</p>
-  </div>
-</div>
-
-<hr>
-
-<h2 id="workshops">Workshops</h2>
-
-<div class="event-entry">
-  <h4>The European School on Magnetism 2019 (Experimental Techniques)</h4>
-  <div class="event-details">
-    <p class="event-location">Brno, Czech Republic | September 2019</p>
-    <p class="event-status">Poster Presented</p>
-  </div>
-</div>
-
-<div class="event-entry">
-  <h4>First Order Phase Transition Workshop 2017</h4>
-  <div class="event-details">
-    <p class="event-location">UGC-DAE CSR, Indore, India | 2017</p>
-  </div>
-</div>
-
-<div class="event-entry">
-  <h4>M.P. Young Scientist Congress 2017</h4>
-  <div class="event-details">
-    <p class="event-location">M.P. Council of Science and Technology, Bhopal, India | 2017</p>
-    <p class="event-status">Advanced Course: Research Methodology &amp; Scientific Paper Writing</p>
-  </div>
-</div>
-
+              <!-- CV Content -->
+              <div class="cv">
+                
+                  <div class="card mt-3 p-3" id="conferences">
+                    <h3 class="card-title font-weight-medium">Conferences</h3>
+                    <div>
+                    
+                     <ul class="card-text font-weight-light list-group list-group-flush">
+    
+      <li class="list-group-item">
+        <div class="row">
+          
+            <div class="col-xs-2 cl-sm-2 col-md-2 text-center" style="width: 75px;">
+              <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px;">
+                2025
+              </span>
+            </div>
+          
+          <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
+            
+            <h6 class="title font-weight-bold ml-1 ml-md-4">APS Global Physics Summit 2025</h6>
+            
+            
+            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem;">Anaheim, CA, USA</h6>
+            
+            
+            
+              <ul class="items">
+                
+                  <li>
+                    
+                      <span class="item">Poster Presented</span>
+                    
+                  </li>
+                
+              </ul>
+            
+          </div>
+        </div>
+      </li>
+    
+      <li class="list-group-item">
+        <div class="row">
+          
+            <div class="col-xs-2 cl-sm-2 col-md-2 text-center" style="width: 75px;">
+              <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px;">
+                2023
+              </span>
+            </div>
+          
+          <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
+            
+            <h6 class="title font-weight-bold ml-1 ml-md-4">MagIC + Magnetism, Interactions and Complexity 2023</h6>
+            
+            
+            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem;">Bedlevo, Poland</h6>
+            
+            
+            
+              <ul class="items">
+                
+                  <li>
+                    
+                      <span class="item">Poster Presented</span>
+                    
+                  </li>
+                
+              </ul>
+            
+          </div>
+        </div>
+      </li>
+    
+      <li class="list-group-item">
+        <div class="row">
+          
+            <div class="col-xs-2 cl-sm-2 col-md-2 text-center" style="width: 75px;">
+              <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px;">
+                2023
+              </span>
+            </div>
+          
+          <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
+            
+            <h6 class="title font-weight-bold ml-1 ml-md-4">8th International Conference on Nanomaterials for Better Living (NBL 2023)</h6>
+            
+            
+            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem;">Srinagar, Kashmir, India</h6>
+            
+            
+            
+              <ul class="items">
+                
+                  <li>
+                    
+                      <span class="item">Poster Presented</span>
+                    
+                  </li>
+                
+              </ul>
+            
+          </div>
+        </div>
+      </li>
+    
+      <li class="list-group-item">
+        <div class="row">
+          
+            <div class="col-xs-2 cl-sm-2 col-md-2 text-center" style="width: 75px;">
+              <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px;">
+                2022
+              </span>
+            </div>
+          
+          <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
+            
+            <h6 class="title font-weight-bold ml-1 ml-md-4">Recent Advancement in Sustainable Materials (GC-RASM 2022)</h6>
+            
+            
+            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem;">Mangalore, Karnataka, India</h6>
+            
+            
+            
+              <ul class="items">
+                
+                  <li>
+                    
+                      <span class="item">Talk Presented</span>
+                    
+                  </li>
+                
+              </ul>
+            
+          </div>
+        </div>
+      </li>
+    
+      <li class="list-group-item">
+        <div class="row">
+          
+            <div class="col-xs-2 cl-sm-2 col-md-2 text-center" style="width: 75px;">
+              <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px;">
+                2022
+              </span>
+            </div>
+          
+          <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
+            
+            <h6 class="title font-weight-bold ml-1 ml-md-4">International Conference on Higher Education Research and Innovation (ICHERI'22)</h6>
+            
+            
+            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem;">Virtual</h6>
+            
+            
+            
+          </div>
+        </div>
+      </li>
+    
+      <li class="list-group-item">
+        <div class="row">
+          
+            <div class="col-xs-2 cl-sm-2 col-md-2 text-center" style="width: 75px;">
+              <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px;">
+                2021
+              </span>
+            </div>
+          
+          <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
+            
+            <h6 class="title font-weight-bold ml-1 ml-md-4">International Conference on Advanced Materials and Mechanical Characterization (ICAMMC) 2021</h6>
+            
+            
+            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem;">Virtual</h6>
+            
+            
+            
+          </div>
+        </div>
+      </li>
+    
+      <li class="list-group-item">
+        <div class="row">
+          
+            <div class="col-xs-2 cl-sm-2 col-md-2 text-center" style="width: 75px;">
+              <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px;">
+                2019
+              </span>
+            </div>
+          
+          <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
+            
+            <h6 class="title font-weight-bold ml-1 ml-md-4">International Conference on Functional Nanomaterials 2019</h6>
+            
+            
+            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem;">IIT (BHU), Varanasi, India</h6>
+            
+            
+            
+              <ul class="items">
+                
+                  <li>
+                    
+                      <span class="item">Poster Presented</span>
+                    
+                  </li>
+                
+              </ul>
+            
+          </div>
+        </div>
+      </li>
+    
+      <li class="list-group-item">
+        <div class="row">
+          
+            <div class="col-xs-2 cl-sm-2 col-md-2 text-center" style="width: 75px;">
+              <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px;">
+                2017
+              </span>
+            </div>
+          
+          <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
+            
+            <h6 class="title font-weight-bold ml-1 ml-md-4">2nd International Conference on Condensed Matter and Applied Physics 2017</h6>
+            
+            
+            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem;">Govt. Engineering College, Bikaner, India</h6>
+            
+            
+            
+              <ul class="items">
+                
+                  <li>
+                    
+                      <span class="item">Poster Presented</span>
+                    
+                  </li>
+                
+              </ul>
+            
+          </div>
+        </div>
+      </li>
+    
+      <li class="list-group-item">
+        <div class="row">
+          
+            <div class="col-xs-2 cl-sm-2 col-md-2 text-center" style="width: 75px;">
+              <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px;">
+                2017
+              </span>
+            </div>
+          
+          <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
+            
+            <h6 class="title font-weight-bold ml-1 ml-md-4">4th International Conference on Nano Structuring by Ion Beam 2017</h6>
+            
+            
+            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem;">Devi Ahilya Vishwavidyalaya, Indore, India</h6>
+            
+            
+            
+              <ul class="items">
+                
+                  <li>
+                    
+                      <span class="item">Poster Presented</span>
+                    
+                  </li>
+                
+              </ul>
+            
+          </div>
+        </div>
+      </li>
+    
+    </ul>
+                    
+                    </div>
+                  </div>
+                
+                  <div class="card mt-3 p-3" id="workshops">
+                    <h3 class="card-title font-weight-medium">Workshops</h3>
+                    <div>
+                    
+                     <ul class="card-text font-weight-light list-group list-group-flush">
+    
+      <li class="list-group-item">
+        <div class="row">
+          
+            <div class="col-xs-2 cl-sm-2 col-md-2 text-center" style="width: 75px;">
+              <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px;">
+                2019
+              </span>
+            </div>
+          
+          <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
+            
+            <h6 class="title font-weight-bold ml-1 ml-md-4">The European School on Magnetism 2019 (Experimental Techniques)</h6>
+            
+            
+            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem;">Brno, Czech Republic</h6>
+            
+            
+            
+              <ul class="items">
+                
+                  <li>
+                    
+                      <span class="item">Poster Presented</span>
+                    
+                  </li>
+                
+              </ul>
+            
+          </div>
+        </div>
+      </li>
+    
+      <li class="list-group-item">
+        <div class="row">
+          
+            <div class="col-xs-2 cl-sm-2 col-md-2 text-center" style="width: 75px;">
+              <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px;">
+                2017
+              </span>
+            </div>
+          
+          <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
+            
+            <h6 class="title font-weight-bold ml-1 ml-md-4">First Order Phase Transition Workshop 2017</h6>
+            
+            
+            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem;">UGC-DAE CSR, Indore, India</h6>
+            
+            
+            
+          </div>
+        </div>
+      </li>
+    
+      <li class="list-group-item">
+        <div class="row">
+          
+            <div class="col-xs-2 cl-sm-2 col-md-2 text-center" style="width: 75px;">
+              <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px;">
+                2017
+              </span>
+            </div>
+          
+          <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
+            
+            <h6 class="title font-weight-bold ml-1 ml-md-4">M.P. Young Scientist Congress 2017</h6>
+            
+            
+            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem;">M.P. Council of Science and Technology, Bhopal, India</h6>
+            
+            
+            
+              <ul class="items">
+                
+                  <li>
+                    
+                      <span class="item">Advanced Course on Research Methodology &amp; Scientific Paper Writing</span>
+                    
+                  </li>
+                
+              </ul>
+            
+          </div>
+        </div>
+      </li>
+    
+    </ul>
+                    
+                    </div>
+                  </div>
+                
+              </div>
+            </div>
           </article>
 
         </div>
 
-          </div>
-        </div>
-        
+        <style>
+          .cv-container {
+            display: flex;
+            gap: 2rem;
+            position: relative;
+          }
+
+          .cv-toc {
+            position: sticky;
+            top: 80px;
+            align-self: flex-start;
+            min-width: 200px;
+            max-width: 250px;
+            height: fit-content;
+          }
+
+          .cv-toc-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+          }
+
+          .cv-toc-item {
+            margin-bottom: 0.5rem;
+          }
+
+          .cv-toc-link {
+            display: block;
+            padding: 0.5rem 1rem;
+            color: var(--global-text-color);
+            text-decoration: none;
+            border-left: 2px solid transparent;
+            transition: all 0.2s ease;
+            font-size: 0.9rem;
+          }
+
+          .cv-toc-link:hover {
+            color: var(--global-theme-color);
+            border-left-color: var(--global-theme-color);
+            background-color: var(--global-bg-color);
+          }
+
+          .cv-toc-link.active {
+            color: var(--global-theme-color);
+            border-left-color: var(--global-theme-color);
+            font-weight: 600;
+          }
+
+          .cv {
+            flex: 1;
+            min-width: 0;
+          }
+
+          /* Scroll offset for fixed navbar */
+          .cv .card[id] {
+            scroll-margin-top: 100px;
+          }
+
+          /* Mobile TOC Toggle Button */
+          .cv-toc-toggle {
+            display: none;
+            width: 100%;
+            padding: 0.75rem 1rem;
+            margin-bottom: 1rem;
+            background-color: var(--global-theme-color);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+          }
+
+          .cv-toc-toggle:hover {
+            background-color: var(--global-hover-color);
+          }
+
+          .cv-toc-toggle i {
+            margin-right: 0.5rem;
+          }
+
+          /* Mobile responsive */
+          @media (max-width: 768px) {
+            .cv-container {
+              flex-direction: column;
+            }
+
+            .cv-toc-toggle {
+              display: block;
+            }
+
+            .cv-toc {
+              position: relative;
+              top: 0;
+              max-width: 100%;
+              margin-bottom: 1rem;
+              max-height: 0;
+              overflow: hidden;
+              transition: max-height 0.3s ease;
+            }
+
+            .cv-toc.active {
+              max-height: 500px;
+              margin-bottom: 1rem;
+            }
+
+            .cv-toc-list {
+              display: block;
+              padding: 1rem;
+              background-color: var(--global-bg-color);
+              border: 1px solid var(--global-divider-color);
+              border-radius: 5px;
+            }
+
+            .cv-toc-item {
+              margin-bottom: 0.75rem;
+            }
+
+            .cv-toc-link {
+              border-left: 2px solid transparent;
+              border-bottom: none;
+              padding: 0.5rem 1rem;
+            }
+
+            .cv-toc-link:hover,
+            .cv-toc-link.active {
+              border-left-color: var(--global-theme-color);
+              border-bottom: none;
+            }
+          }
+
+          /* Smooth scrolling */
+          html {
+            scroll-behavior: smooth;
+          }
+        </style>
+
+        <script>
+          document.addEventListener('DOMContentLoaded', function() {
+            const tocLinks = document.querySelectorAll('.cv-toc-link');
+            const sections = document.querySelectorAll('.cv .card[id]');
+            const tocToggle = document.getElementById('tocToggle');
+            const cvToc = document.getElementById('cvToc');
+
+            // Mobile TOC toggle
+            if (tocToggle) {
+              tocToggle.addEventListener('click', function() {
+                cvToc.classList.toggle('active');
+              });
+
+              // Close TOC when a link is clicked on mobile
+              tocLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                  if (window.innerWidth <= 768) {
+                    cvToc.classList.remove('active');
+                  }
+                });
+              });
+            }
+
+            // Highlight active section on scroll
+            function highlightTOC() {
+              let current = '';
+              sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.pageYOffset >= sectionTop - 100) {
+                  current = section.getAttribute('id');
+                }
+              });
+
+              tocLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                  link.classList.add('active');
+                }
+              });
+            }
+
+            window.addEventListener('scroll', highlightTOC);
+            highlightTOC(); // Initial highlight
+          });
+        </script>
+
       
     </div>
 
@@ -304,9 +745,6 @@
   <!-- Medium Zoom JS -->
   <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.8/dist/medium-zoom.min.js" integrity="sha256-7PhEpEWEW0XXQ0k6kQrPKwuoIomz8R8IYyuU1Qew4P8=" crossorigin="anonymous"></script>
   <script defer src="/assets/js/zoom.js"></script>
-  <!-- Sidebar Table of Contents -->
-  <script defer src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script>
-
 
   <!-- Bootstrap Table -->
   <script defer src="https://unpkg.com/bootstrap-table@1.21.4/dist/bootstrap-table.min.js"></script>
