@@ -6,6 +6,9 @@
 {% if include.keys %}
 <div class="publications">
   <h2>Related Publications</h2>
-  {% bibliography -f {{ site.scholar.bibliography }} --query @*[key={{include.keys}}]* %}
+  {% assign key_array = include.keys | split: "," %}
+  {% for key in key_array %}
+    {% bibliography -f {{ site.scholar.bibliography }} --query @*[key={{ key }}]* %}
+  {% endfor %}
 </div>
 {% endif %}
