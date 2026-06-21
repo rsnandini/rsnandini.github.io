@@ -2,7 +2,7 @@
 layout: cv
 permalink: /cv/
 title: CV
-description: "Short version of my CV. For the full CV please check out the PDF linked on the right.<BR><b>Note: This part of my webpage is only infrequently updated. Last updated: 20.06.2026</b>"
+description: "Comprehensive overview of my academic and professional experience. For the complete CV, please download the PDF version linked above."
 nav: true
 nav_order: 4
 cv_pdf: cv_rajnandini.pdf

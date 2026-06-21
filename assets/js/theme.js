@@ -26,6 +26,18 @@ let setTheme = (theme) =>  {
         tables[i].classList.remove('table-dark');
       }
     }
+
+    // Update toggle button visual state
+    const toggleButton = document.getElementById('light-toggle');
+    if (toggleButton) {
+      if (theme == "dark") {
+        toggleButton.setAttribute('title', 'Switch to light mode');
+        toggleButton.classList.add('dark-mode-active');
+      } else {
+        toggleButton.setAttribute('title', 'Switch to dark mode');
+        toggleButton.classList.remove('dark-mode-active');
+      }
+    }
   } else {
     document.documentElement.removeAttribute("data-theme");
   }
