@@ -1,7 +1,7 @@
 ---
 layout: conferences
-permalink: /Conferences and Workshops/
-title: Conferences & Workshops
+permalink: /conferences/
+title: Conferences 
 description: A timeline of conferences and workshops attended, highlighting research presentations and professional development.
 nav: true
 nav_order: 5
