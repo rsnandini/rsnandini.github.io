@@ -7,6 +7,7 @@ nav: true
 nav_order: 3
 display_categories: [Ph.D., Project, Master's, Internship]
 horizontal: false
+social: true
 ---
 <!-- We aim to address <span class="emp"><b>sustainability, reliability, and efficiency</b></span> of machine learning, by selecting the most relevant data for training, among other techniques. -->
 

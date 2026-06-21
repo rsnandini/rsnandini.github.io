@@ -6,6 +6,7 @@ description: "Short version of my CV. For the full CV please check out the PDF l
 nav: true
 nav_order: 4
 cv_pdf: cv_rajnandini.pdf
+social: true
 ---
 
 

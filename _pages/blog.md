@@ -2,6 +2,7 @@
 layout: blog
 permalink: /blog/
 title: Blogs
+social: true
 pagination:
   enabled: true
   collection: posts

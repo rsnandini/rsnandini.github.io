@@ -8,6 +8,7 @@ description: <h6>For the complete list, please see my <b><a href='https://schola
 years: [Thesis, Preprints, 2024, 2023, 2022, 2018] #2017, 2016, 2015, 2014, 2013, 2012, 2011, 2009, Thesis, 1967, 1956, 1950, 1935, 1905]
 nav: true
 nav_order: 1
+social: true
 ---
 <!-- _pages/publications.md -->
 <div class="publications">

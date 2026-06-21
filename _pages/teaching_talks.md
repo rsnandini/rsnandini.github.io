@@ -5,6 +5,7 @@ title: Conferences
 description: A timeline of conferences and workshops attended, highlighting research presentations and professional development.
 nav: true
 nav_order: 5
+social: true
 ---
 
 <!-- Content is automatically generated from _data/conferences.yml -->
