@@ -38,3 +38,7 @@ Sol-gel synthesis, ion beam irradiation, XRD, FE-SEM, EDAX, VSM, magnetic data a
         {% include figure.html path="assets/img/projects/Project.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
+
+## Related Publications
+
+{% include project_publications.html keys="sharma2018effect" %}

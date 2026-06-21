@@ -68,14 +68,6 @@ This work demonstrated that solution-based methods can produce garnet thin films
 - Visiting Scholar at Northeastern University EQUAL Lab (2024-Present)
 - Postdoctoral Fellow at Howard University Quantum Materials Modeling Lab (2024-Present)
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/publication_preview/jmmm.png" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/publication_preview/matlet.jpg" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Left: Interfacial skyrmion structure. Right: TmIG thin film magnetic properties.
-</div>
+## Related Publications
+
+{% include project_publications.html keys="sharma2022interfacial,sharma2023magnetic,sharma2023all,sharma2023magnetic1" %}

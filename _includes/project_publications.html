@@ -1,0 +1,11 @@
+<!-- Include specific publications in a project page -->
+<!-- Usage in project .md file:
+     {% include project_publications.html keys="sharma2022interfacial,sharma2023magnetic" %}
+-->
+
+{% if include.keys %}
+<div class="publications">
+  <h2>Related Publications</h2>
+  {% bibliography -f {{ site.scholar.bibliography }} --query @*[key={{include.keys}}]* %}
+</div>
+{% endif %}
