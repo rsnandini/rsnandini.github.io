@@ -1,97 +1,179 @@
-- title: General Information
-  type: map
+- title: Research Interest
+  type: list
   contents:
-    - name: Full Name
-      value: Rajnandini Sharma
-    - name: Date of Birth
-      value: 14th Dec 1993
-    - name: Languages
-      value: English, Hindi, marwadi
+    - NV Magnetometry, Magnonics, Spintronics, Magnetic Materials and Magnetism, Ferrimagnetic Insulator, Garnets, Ferromagnetic Resonance, and Thin Film Deposition.
+
+- title: Work and Research Experience
+  type: time_table
+  contents:
+    - title: Postdoctoral Fellow
+      institution: Howard University, Washington DC, USA
+      year: 2024 - Present
+      description:
+        - Postdoctoral fellow at the Department of Physics and Astronomy.
+        - Identified emergent materials and collaborated to design the projects.
+        - Micromagnetic simulation studies for real-space magnetic topological features.
+
+    - title: Visiting Scholar
+      institution: Northeastern University, Boston, MA, USA
+      year: 2024 - Present
+      description:
+        - Synthesis and characterization of magnetic materials.
+        - Performed scanning NV magnetometry experiments.
+        - Collaborating to publish an article in peer-reviewed journals.
+
+    - title: Beamline User
+      institution: Raja Ramanna Center for Advanced Technology, Indore, India
+      year: 2019
+      description:
+        - Beamline user at BL-3 Soft X-ray Beamline of INDUS-2.
+        - Soft X-ray reflectivity and absorption experiments and exposure to the synchrotron radiation source.
+        - Performing the experiments and sample preparation.
+
+    - title: Project Fellow
+      institution: School of Physics, Devi Ahilya Vishwa Vidyalaya, Indore, India
+      year: 2016 - 2018
+      description:
+        - Project Fellow working on swift heavy ion irradiation effects.
+        - Project entitled "Effect of swift heavy ion irradiation (SHI) on structural and magnetic properties of nano-crystalline spinel ferrites."
+        - Assisted with Ph.D. for experimental data analysis and synthesis.
+
+    - title: Master's Project Student
+      institution: UGC-DAE Consortium for Scientific Research, Indore, India
+      year: 2015 - 2016
+      description:
+        - Master's project student under the supervision of Dr. Vasant Sathe.
+        - Thesis entitled "Temperature dependent Raman spectroscopic studies of LaFeO₃ and LaMnO₃ across magnetic order."
+        - Synthesizing perovskites with the solid-state method, characterization, and data analysis.
+
+    - title: Summer Intern
+      institution: Institute for Plasma Research, Gandhinagar, India
+      year: 2015
+      description:
+        - Summer intern guided by Mr. Thomas Jinto.
+        - Report entitled "Calibration of polychromator for Thomson scattering using Raman scattering."
+        - Alignments and calibration of polychromator.
 
 - title: Education
   type: time_table
   contents:
-    - title: Ph.D.
-      institution: Indian Institute of Technology (BHU)
-      year: 2024
+    - title: Ph.D. in Materials Science and Technology
+      institution: Indian Institute of Technology (Banaras Hindu University), Varanasi, India
+      year: 2018 - 2024
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - Thesis "Magnetic resonance properties of all solution-processed Iron Garnet thin films."
+        - Advisor Dr. Shrawan Kumar Mishra.
+
+    - title: M.Sc. in Physics
+      institution: Devi Ahilya Vishwa Vidyalaya, Indore, India
+      year: 2014 - 2016
       description:
-        - Description 1.
-        - Description 2.
+        - CGPA 8.16/10 (I Division).
 
-- title: Experience
-  type: time_table
-  contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: B.Sc. in Physics, Chemistry, and Mathematics
+      institution: Govt. Holkar Science College, Indore, India
+      year: 2011 - 2014
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Affiliated to Devi Ahilya Vishwa Vidyalaya, Indore, India.
+        - Percentage 79.97% (I Division) (1st position in Batch).
+
+    - title: Higher Secondary Examination
+      institution: Madhya Pradesh Board, Indore, India
+      year: 2011
       description:
-        - Description 1.
-        - Description 2.
+        - Physics, Chemistry, and Mathematics.
+        - Percentage 86.2% (among 1 percent in the state of M.P., India).
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
-  type: time_table
-  contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
-
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 1921
-      items: 
-        - Nobel Prize in Physics 
-        - Matteucci Medal
-    - year: 2029
-      items: 
-        - Max Planck Medal
-
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Topic 1.
-      items: 
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
-
-- title: Other Interests
+- title: Publications
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - "<b>1.</b> "Quantum sensing of geometrically altered DMI-induced domain walls in thulium iron Garnets" <b>R. Sharma</b>, et al. (Under preparation)"
+    - "<b>2.</b> "Magneto Crystalline Anisotropy in Multi-Oriented MnSb Thin Films for Multifunctional Device Applications", N. Azam, I. Irshad, <b>R. Sharma</b>, <i>APL Electronic Devices</i> (Accepted)."
+    - "<b>3.</b> "Interfacial skyrmion in magnetic thin films and its applications", <b>R. Sharma</b>, S. K. Mishra, <i>Journal of Magnetism and Magnetic Materials</i> 551 (2022) 169107."
+    - "<b>4.</b> "Observation of V−V dimers softening and distinct length scales in nanostructured VO₂ thin films", P.K. Ojha*, <b>R. Sharma</b>*, R. Hissariya, S. Babu, E. Ketkar, S. Singh, S. Neema, A. Rana, N. Pal, V.G. Sathe, S.K. Mishra, <i>Journal of Alloys and Chemistry</i> 163 (2022) 110564."
+    - "<b>5.</b> "Antisites disorder mediated magnetization relaxation and polydispersity in La₃NiMnO₇-crystallites", R. Hissariya, <b>R. Sharma</b>, S.K. Mishra, <i>Journal of Physics and Chemistry of Solids</i> 181 (2023) 111549."
+    - "<b>6.</b> "Magnetic energy dissipative factors in solution-processed TmIG thin films", <b>R. Sharma</b>, P.K. Ojha and S.K. Mishra, <i>Thin Solid Films</i> 764 (2023) 139625."
+    - "<b>7.</b> "Magnetic ordering in sol-gel-based Tm₃Fe₅O₁₂ thin films", <b>R. Sharma</b>, P.K. Ojha, S. Choudhary and S. K. Mishra, <i>Materials Letters</i> 352 (2023) 135154."
+    - "<b>8.</b> "Charge ordering at a dielectric gate in itinerant metallic states with low-field memristor properties in VO₂ thin films", P. K. Ojha, <b>R. Sharma</b>, S. K. Mishra, and S.Ram, <i>Surfaces and Interfaces</i> 42 (2023) 103445."
+    - "<b>9.</b> "Dynamics of phonons, charge-regulated itinerant VO₂ states, and their impacts on the memristor properties of spin VO₂ films", P. K. Ojha, <b>R. Sharma</b>, V.G. Sathe, S. Ram and S. K. Mishra, <i>Surfaces and Interfaces</i> 46 (2024) 104029."
+    - "<b>10.</b> "All solution grown epitaxial magnonic crystal of thulium iron garnet thin film", <b>R. Sharma</b>, P. K. Ojha, S. Sahoo, R. Roychoudhary, and S. K. Mishra <i>Nanoscale</i> 15 (2023) 9152-9161 (DOI 10.1039/d2nr05823e-2312.15973)."
+    - "<b>11.</b> "The micromagnetic study of stabilizing parameters for the interfacial skyrmions", <b>R. Sharma</b>, and S. K. Mishra, <i>Materials Today Proceedings</i> 66 (2022) 1205."
+    - "<b>12.</b> "Effect of 120 MeV ²⁸Si⁸⁺ ion irradiation on structural and magnetic properties of NiFe₂O₄ and Ni₀.₇Zn₀.₃Fe₂O₄" <b>R. Sharma</b>, S. Raghuwanshi, M. Satalkar, S. N. Kane, T. R. Tatarchuk, and F. Mazaleyrat, <i>AIP Conference Proceedings</i> 1953 (2018) 030117."
+
+- title: Conferences and Presentations
+  type: time_table
+  contents:
+    - year: 2025
+      items:
+        - Conference for Graduate Women and Gender Minorities in Physics, Washington DC, USA.
+        - American Physical Society Global Physics Summit (March Meeting), Los Angeles CA, USA (Poster Presented).
+
+    - year: 2023
+      items:
+        - MagIC+ Magnetism, Interactions and Complexity Innovative ideas on spin wave dynamics and transport properties in low-dimensional materials (MagIC+ 2023), Bedlewo, Poland (Poster presented).
+        - 8th International Conference on Nanomaterials for Better Living (NBL 2023), Srinagar, Kashmir, India (Poster presented).
+
+    - year: 2022
+      items:
+        - Recent Advancement in Sustainable Materials (GC-RASM 2022), Mangalore, Karnataka, India (Oral presentation).
+        - International Conference on Higher Education Research and Innovation (ICHERI'22) (Virtually).
+
+    - year: 2021
+      items:
+        - International Conference on Advanced Materials and Mechanical Characterization (ICAMMC) 2021 (Virtually).
+
+- title: Experimental Skills
+  type: nested_list
+  contents:
+    - title: Sample Preparation
+      items:
+        - Sol-gel-based spin coating
+        - Magnetron DC and RF Sputtering
+        - Ion Beam Sputtering
+
+    - title: Characterization Techniques
+      items:
+        - Scanning NV magnetometry
+        - Broadband Ferromagnetic resonance (FMR)
+        - Atomic Force Microscopy (AFM)
+        - Magnetic Properties Measurement System (MPMS)
+        - Spectrometer
+        - Micro Raman
+        - X-ray Reflectivity (XRR)
+        - X-ray diffraction (XRD)
+        - Field Electron Scanning Electron Microscope (FESEM)
+        - Transmission Electron Microscopy (TEM)
+        - X-ray Photoemission Spectroscopy (XPS)
+
+- title: Computational Skills
+  type: nested_list
+  contents:
+    - title: Basic Software
+      items:
+        - Microsoft Office
+        - Origin (graphics software)
+        - Igor (graphics software)
+        - LaTeX
+        - Python
+
+    - title: Analytical Software
+      items:
+        - Image J (Scanning Electron Microscopy analysis)
+        - Gwyddion (Atomic Force Microscopy analysis)
+        - Parratt32 (X-ray reflectivity analysis)
+        - Vesta Software (crystal structure analysis)
+        - CasaXPS (X-ray Photoelectron Spectroscopy analysis)
+        - XPS Peak 4.1 (X-ray Photoelectron Spectroscopy analysis)
+        - Full Prof (Rietveld Refinement)
+        - SRIM (ion irradiation stopping potential and range of matter)
+
+    - title: Micromagnetic Software
+      items:
+        - Mumax³
+        - Object Oriented Micromagnetic Framework (OOMMF)
+
+- title: Additional Skills
+  type: list
+  contents:
+    - Experience in performing data analysis, preparing reports and presentations for projects, and writing scientific publications.
+    - Learned to be efficient in time management and able to fulfill tight deadline requirements.
