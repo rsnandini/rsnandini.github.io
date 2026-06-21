@@ -7,7 +7,7 @@
   type: time_table
   contents:
     - title: Postdoctoral Fellow
-      institution: Howard University, Washington DC, USA
+      institution: Howard University, <a href="https://sites.google.com/view/sugatachowdhury/home">QMML Lab</a> Washington DC, USA
       year: 2024 - Present
       description:
         - Postdoctoral fellow at the Department of Physics and Astronomy.
@@ -15,7 +15,7 @@
         - Micromagnetic simulation studies for real-space magnetic topological features.
 
     - title: Visiting Scholar
-      institution: Northeastern University, Boston, MA, USA
+      institution: Northeastern University, <a href="https://equal.sites.northeastern.edu/">EQUAL Lab</a>, Boston, MA, USA
       year: 2024 - Present
       description:
         - Synthesis and characterization of magnetic materials.
