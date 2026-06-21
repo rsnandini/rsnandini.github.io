@@ -41,4 +41,6 @@ Sol-gel synthesis, ion beam irradiation, XRD, FE-SEM, EDAX, VSM, magnetic data a
 
 ## Related Publications
 
-{% include project_publications.html keys="sharma2018effect" %}
+<div class="publications">
+{% bibliography -f papers.bib --query @*[key=sharma2018effect]* %}
+</div>

@@ -70,4 +70,6 @@ This work demonstrated that solution-based methods can produce garnet thin films
 
 ## Related Publications
 
-{% include project_publications.html keys="sharma2022interfacial,sharma2023magnetic,sharma2023all,sharma2023magnetic1" %}
+<div class="publications">
+{% bibliography -f papers.bib --query @*[key=sharma2022interfacial || key=sharma2023magnetic || key=sharma2023all || key=sharma2023magnetic1]* %}
+</div>
