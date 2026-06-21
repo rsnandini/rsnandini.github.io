@@ -47,9 +47,19 @@ layout: default
                     </div>
                   </div>
                 {% endfor %}
+
+                {%- if page.social %}
+                  <div class="social mt-5">
+                    <div class="contact-icons">
+                      {% include social.html %}
+                    </div>
+                    <div class="contact-note">
+                      {{ site.contact_note }}
+                    </div>
+                  </div>
+                {%- endif %}
               </div>
-            </div>
-          </article>
+            </article>
 
         </div>
 
