@@ -12,7 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>CV | Rajnandini  Sharma</title>
     <meta name="author" content="Rajnandini  Sharma">
-    <meta name="description" content="Short version of my CV. For the full CV please check out the PDF linked on the right.&lt;BR&gt;&lt;b&gt;Note: This part of my webpage is only infrequently updated. Last updated: 20.06.2026&lt;/b&gt;">
+    <meta name="description" content="Comprehensive overview of my academic and professional experience. For the complete CV, please download the PDF version linked above.">
     <meta name="keywords" content="magnetic materials, spintronics, magnonics, simulation">
 
 
@@ -93,11 +93,11 @@
               <li class="nav-item ">
                 <a class="nav-link" href="/conferences/">Conferences</a>
               </li>
-
-              <!-- Blog -->
+<!-- Blog -->
               <li class="nav-item ">
                 <a class="nav-link" href="/blog/">Blogs</a>
               </li>
+              
 
               <!-- Toogle theme mode -->
               <li class="toggle-container">
@@ -117,6 +117,23 @@
           <span class="progress-bar"></span>
         </div>
       </progress>
+
+    <!-- Mobile menu auto-close on link click -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const navbarCollapse = document.getElementById('navbarNav');
+        const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+        navLinks.forEach(function(link) {
+          link.addEventListener('click', function() {
+            if (window.innerWidth <= 992 && navbarCollapse.classList.contains('show')) {
+              const navbarToggler = document.querySelector('.navbar-toggler');
+              navbarToggler.click();
+            }
+          });
+        });
+      });
+    </script>
     </header>
 
 
@@ -129,7 +146,7 @@
           <header class="post-header">
             <h1 class="post-title">CV <a href="/assets/pdf/cv_rajnandini.pdf" target="_blank" rel="noopener noreferrer" class="float-right"><i class="fas fa-file-pdf"></i></a>
 </h1>
-            <p class="post-description">Short version of my CV. For the full CV please check out the PDF linked on the right.<br><b>Note: This part of my webpage is only infrequently updated. Last updated: 20.06.2026</b></p>
+            <p class="post-description">Comprehensive overview of my academic and professional experience. For the complete CV, please download the PDF version linked above.</p>
           </header>
 
           <article>
@@ -976,143 +993,6 @@
             
 
         </div>
-
-        <style>
-          .cv-container {
-            display: flex;
-            gap: 2rem;
-            position: relative;
-          }
-
-          .cv-toc {
-            position: sticky;
-            top: 80px;
-            align-self: flex-start;
-            min-width: 200px;
-            max-width: 250px;
-            height: fit-content;
-          }
-
-          .cv-toc-list {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-          }
-
-          .cv-toc-item {
-            margin-bottom: 0.5rem;
-          }
-
-          .cv-toc-link {
-            display: block;
-            padding: 0.5rem 1rem;
-            color: var(--global-text-color);
-            text-decoration: none;
-            border-left: 2px solid transparent;
-            transition: all 0.2s ease;
-            font-size: 0.9rem;
-          }
-
-          .cv-toc-link:hover {
-            color: var(--global-theme-color);
-            border-left-color: var(--global-theme-color);
-            background-color: var(--global-bg-color);
-          }
-
-          .cv-toc-link.active {
-            color: var(--global-theme-color);
-            border-left-color: var(--global-theme-color);
-            font-weight: 600;
-          }
-
-          .cv {
-            flex: 1;
-            min-width: 0;
-          }
-
-          /* Scroll offset for fixed navbar */
-          .cv .card[id] {
-            scroll-margin-top: 100px;
-          }
-
-          /* Mobile TOC Toggle Button */
-          .cv-toc-toggle {
-            display: none;
-            width: 100%;
-            padding: 0.75rem 1rem;
-            margin-bottom: 1rem;
-            background-color: var(--global-theme-color);
-            color: white;
-            border: none;
-            border-radius: 5px;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: background-color 0.2s ease;
-          }
-
-          .cv-toc-toggle:hover {
-            background-color: var(--global-hover-color);
-          }
-
-          .cv-toc-toggle i {
-            margin-right: 0.5rem;
-          }
-
-          /* Mobile responsive */
-          @media (max-width: 768px) {
-            .cv-container {
-              flex-direction: column;
-            }
-
-            .cv-toc-toggle {
-              display: block;
-            }
-
-            .cv-toc {
-              position: relative;
-              top: 0;
-              max-width: 100%;
-              margin-bottom: 1rem;
-              max-height: 0;
-              overflow: hidden;
-              transition: max-height 0.3s ease;
-            }
-
-            .cv-toc.active {
-              max-height: 500px;
-              margin-bottom: 1rem;
-            }
-
-            .cv-toc-list {
-              display: block;
-              padding: 1rem;
-              background-color: var(--global-bg-color);
-              border: 1px solid var(--global-divider-color);
-              border-radius: 5px;
-            }
-
-            .cv-toc-item {
-              margin-bottom: 0.75rem;
-            }
-
-            .cv-toc-link {
-              border-left: 2px solid transparent;
-              border-bottom: none;
-              padding: 0.5rem 1rem;
-            }
-
-            .cv-toc-link:hover,
-            .cv-toc-link.active {
-              border-left-color: var(--global-theme-color);
-              border-bottom: none;
-            }
-          }
-
-          /* Smooth scrolling */
-          html {
-            scroll-behavior: smooth;
-          }
-        </style>
 
         <script>
           document.addEventListener('DOMContentLoaded', function() {

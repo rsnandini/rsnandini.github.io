@@ -51,16 +51,16 @@
 html[data-theme=dark] {
   --global-bg-color: #1C1C1D;
   --global-code-bg-color: #2c3237;
-  --global-text-color: #e8e8e8;
-  --global-text-color-light: #e8e8e8;
+  --global-text-color: #C0C0C1;
+  --global-text-color-light: #9A9A9B;
   --global-theme-color: #2698BA;
-  --global-hover-color: #2698BA;
+  --global-hover-color: rgb(123.3883928571, 204.0535714286, 228.1116071429);
   --global-hover-text-color: #ffffff;
   --global-footer-bg-color: #e8e8e8;
   --global-footer-text-color: #1C1C1D;
-  --global-footer-link-color: #000000;
+  --global-footer-link-color: #1C1C1D;
   --global-distill-app-color: #e8e8e8;
-  --global-divider-color: #ffffff;
+  --global-divider-color: #404040;
   --global-card-bg-color: #212529;
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;
@@ -127,6 +127,10 @@ body.sticky-bottom-footer {
 /*******************************************************************************
  * Styles for the base elements of the theme.
  ******************************************************************************/
+body {
+  line-height: 1.6;
+}
+
 p,
 h1,
 h2,
@@ -140,6 +144,41 @@ li,
 span,
 strong {
   color: var(--global-text-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.1rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
 }
 
 .emp {
@@ -179,7 +218,8 @@ table.table a:hover:after :not(.nav-item.dropdown) {
 
 figure,
 img {
-  max-width: 90vw;
+  max-width: 100%;
+  height: auto;
 }
 
 blockquote {
@@ -926,6 +966,236 @@ nav[data-toggle=toc] .nav-link.active:hover {
   color: var(--global-danger-block-title);
 }
 
+.cv-container {
+  display: flex;
+  gap: 2rem;
+  position: relative;
+}
+
+.cv-toc {
+  position: sticky;
+  top: 80px;
+  align-self: flex-start;
+  min-width: 200px;
+  max-width: 250px;
+  height: fit-content;
+}
+
+.cv-toc-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cv-toc-item {
+  margin-bottom: 0.5rem;
+}
+
+.cv-toc-link {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: var(--global-text-color);
+  text-decoration: none;
+  border-left: 2px solid transparent;
+  transition: all 0.2s ease;
+  font-size: 0.9rem;
+}
+.cv-toc-link:hover {
+  color: var(--global-theme-color);
+  border-left-color: var(--global-theme-color);
+  background-color: var(--global-bg-color);
+}
+.cv-toc-link.active {
+  color: var(--global-theme-color);
+  border-left-color: var(--global-theme-color);
+  font-weight: 600;
+}
+
+.cv {
+  flex: 1;
+  min-width: 0;
+}
+.cv .card[id] {
+  scroll-margin-top: 100px;
+}
+
+.cv-toc-toggle {
+  display: none;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  background-color: var(--global-theme-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.cv-toc-toggle:hover {
+  background-color: var(--global-hover-color);
+}
+.cv-toc-toggle i {
+  margin-right: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .cv-container {
+    flex-direction: column;
+  }
+  .cv-toc-toggle {
+    display: block;
+  }
+  .cv-toc {
+    position: relative;
+    top: 0;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  .cv-toc.active {
+    max-height: 500px;
+    margin-bottom: 1rem;
+  }
+  .cv-toc-list {
+    display: block;
+    padding: 1rem;
+    background-color: var(--global-bg-color);
+    border: 1px solid var(--global-divider-color);
+    border-radius: 5px;
+  }
+  .cv-toc-item {
+    margin-bottom: 0.75rem;
+  }
+  .cv-toc-link {
+    border-left: 2px solid transparent;
+    border-bottom: none;
+    padding: 0.5rem 1rem;
+  }
+  .cv-toc-link:hover, .cv-toc-link.active {
+    border-left-color: var(--global-theme-color);
+    border-bottom: none;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.conferences-container {
+  display: flex;
+  gap: 2rem;
+  position: relative;
+}
+
+.conferences-toc {
+  position: sticky;
+  top: 80px;
+  align-self: flex-start;
+  min-width: 200px;
+  max-width: 250px;
+  height: fit-content;
+}
+
+.conferences-toc-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.conferences-toc-item {
+  margin-bottom: 0.5rem;
+}
+
+.conferences-toc-link {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: var(--global-text-color);
+  text-decoration: none;
+  border-left: 2px solid transparent;
+  transition: all 0.2s ease;
+  font-size: 0.9rem;
+}
+.conferences-toc-link:hover {
+  color: var(--global-theme-color);
+  border-left-color: var(--global-theme-color);
+  background-color: var(--global-bg-color);
+}
+.conferences-toc-link.active {
+  color: var(--global-theme-color);
+  border-left-color: var(--global-theme-color);
+  font-weight: 600;
+}
+
+.conferences-content {
+  flex: 1;
+  min-width: 0;
+}
+.conferences-content .card[id] {
+  scroll-margin-top: 100px;
+}
+
+.conferences-toc-toggle {
+  display: none;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  background-color: var(--global-theme-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.conferences-toc-toggle:hover {
+  background-color: var(--global-hover-color);
+}
+.conferences-toc-toggle i {
+  margin-right: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .conferences-container {
+    flex-direction: column;
+  }
+  .conferences-toc-toggle {
+    display: block;
+  }
+  .conferences-toc {
+    position: relative;
+    top: 0;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  .conferences-toc.active {
+    max-height: 500px;
+    margin-bottom: 1rem;
+  }
+  .conferences-toc-list {
+    display: block;
+    padding: 1rem;
+    background-color: var(--global-bg-color);
+    border: 1px solid var(--global-divider-color);
+    border-radius: 5px;
+  }
+  .conferences-toc-item {
+    margin-bottom: 0.75rem;
+  }
+  .conferences-toc-link {
+    border-left: 2px solid transparent;
+    border-bottom: none;
+    padding: 0.5rem 1rem;
+  }
+  .conferences-toc-link:hover, .conferences-toc-link.active {
+    border-left-color: var(--global-theme-color);
+    border-bottom: none;
+  }
+}
 /*******************************************************************************
  * Style overrides for distill blog posts.
  ******************************************************************************/

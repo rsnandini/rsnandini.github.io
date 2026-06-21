@@ -10,9 +10,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Label Noise | Rajnandini  Sharma</title>
+    <title>Magnetic Thin Films for Spintronics | Rajnandini  Sharma</title>
     <meta name="author" content="Rajnandini  Sharma">
-    <meta name="description" content="Robust traing against label nosie">
+    <meta name="description" content="Synthesis and characterization of high-anisotropy iron garnets for spintronics and quantum applications">
     <meta name="keywords" content="magnetic materials, spintronics, magnonics, simulation">
 
 
@@ -38,7 +38,7 @@
     <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%F0%9F%8C%B1&lt;/text&gt;&lt;/svg&gt;">
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://rsnandini.github.io/projects/label_noise/">
+    <link rel="canonical" href="https://rsnandini.github.io/projects/PhD/">
 
     <!-- Dark Mode -->
     
@@ -93,11 +93,11 @@
               <li class="nav-item ">
                 <a class="nav-link" href="/conferences/">Conferences</a>
               </li>
-
-              <!-- Blog -->
+<!-- Blog -->
               <li class="nav-item ">
                 <a class="nav-link" href="/blog/">Blogs</a>
               </li>
+              
 
               <!-- Toogle theme mode -->
               <li class="toggle-container">
@@ -117,6 +117,23 @@
           <span class="progress-bar"></span>
         </div>
       </progress>
+
+    <!-- Mobile menu auto-close on link click -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const navbarCollapse = document.getElementById('navbarNav');
+        const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+        navLinks.forEach(function(link) {
+          link.addEventListener('click', function() {
+            if (window.innerWidth <= 992 && navbarCollapse.classList.contains('show')) {
+              const navbarToggler = document.querySelector('.navbar-toggler');
+              navbarToggler.click();
+            }
+          });
+        });
+      });
+    </script>
     </header>
 
 
@@ -127,41 +144,125 @@
         <div class="post">
 
           <header class="post-header">
-            <h1 class="post-title">Label Noise</h1>
-            <p class="post-description">Robust traing against label nosie</p>
+            <h1 class="post-title">Magnetic Thin Films for Spintronics</h1>
+            <p class="post-description">Synthesis and characterization of high-anisotropy iron garnets for spintronics and quantum applications</p>
           </header>
 
           <article>
-            <p>The success of deep neural networks relies heavily on the quality of training data, and in particular accurate labels of the training examples. However, maintaining label quality becomes very expensive for large datasets, and hence mislabeled data points are ubiquitous in large real-world datasets. As deep neural networks have the capacity to essentially memorize any (even random) labeling of the data, noisy labels have a drastic effect on the generalization performance of deep neural networks. Therefore, it becomes crucial to develop methods with strong theoretical guarantees for robust training of neural networks against noisy labels. Such guarantees become of the utmost importance in safety-critical systems, such as aircraft, autonomous cars, and medical devices.</p>
+            <p>This Ph.D. research, conducted at the Department of Materials Science and Technology, IIT (BHU) Varanasi under the supervision of Dr. Shrawan Kumar Mishra, focused on developing cost-effective, solution-processed magnetic thin films for next-generation spintronic and quantum computing applications.</p>
 
-<p>We develop principled techniques with strong theoretical guarantees for robust training of neural networks against noisy labels. We consider the effect of data, model, and pretraining on robustness against label noise.</p>
+<h2 id="research-vision">Research Vision</h2>
 
-<div class="row justify-content-sm-center">
-	<div class="col-sm-12 mt-3 mt-md-0">
-	    <figure>
+<p>The project aimed to synthesize high-quality rare-earth iron garnet (ReIG) thin films with perpendicular magnetic anisotropy (PMA) using scalable sol-gel methods, replacing conventional ultra-high vacuum deposition techniques. The goal was to enable low-cost fabrication of magnonic crystals and quantum sensing platforms.</p>
+
+<h2 id="key-research-thrusts">Key Research Thrusts</h2>
+
+<h3 id="1-thulium-iron-garnet-tmig-thin-films">1. Thulium Iron Garnet (TmIG) Thin Films</h3>
+
+<p>Developed epitaxial TmIG/GGG thin films via all-solution spin-coating methods, achieving:</p>
+<ul>
+  <li>Perpendicular magnetic anisotropy (K = 20.61 kJ/m³)</li>
+  <li>Ultra-low Gilbert damping (α = 0.0216)</li>
+  <li>Compensation temperature at 15 K</li>
+  <li>Interface roughness &lt; 1.5 nm</li>
+</ul>
+
+<p><strong>Publications</strong>: Materials Letters (2023), arXiv preprint (2023)</p>
+
+<h3 id="2-yttrium-iron-garnet-yig-thin-films">2. Yttrium Iron Garnet (YIG) Thin Films</h3>
+
+<p>Synthesized polycrystalline YIG thin films on thermally oxidized Si(100) substrates with optimized magnetic energy dissipation:</p>
+<ul>
+  <li>Saturation magnetization: 3.11 μB/f.u.</li>
+  <li>Gilbert damping: α = 4.754 × 10⁻³</li>
+  <li>Single-phase cubic garnet structure confirmed via XRD</li>
+</ul>
+
+<p><strong>Publication</strong>: Thin Solid Films (2023)</p>
+
+<h3 id="3-interfacial-skyrmion-theory--simulation">3. Interfacial Skyrmion Theory &amp; Simulation</h3>
+
+<p>Conducted comprehensive review and micromagnetic simulations of interfacial skyrmions in FM/HM multilayers:</p>
+<ul>
+  <li>Identified stabilization parameters (DMI, exchange, anisotropy)</li>
+  <li>Explored applications in racetrack memory and neuromorphic devices</li>
+  <li>Demonstrated role of Dzyaloshinskii-Moriya interaction in skyrmion creation</li>
+</ul>
+
+<p><strong>Publications</strong>: Journal of Magnetism and Magnetic Materials (2022), Materials Today: Proceedings (2023)</p>
+
+<h2 id="methodology--techniques">Methodology &amp; Techniques</h2>
+
+<ul>
+  <li>
+<strong>Synthesis</strong>: Sol-gel spin coating, chemical solution deposition</li>
+  <li>
+<strong>Structural Characterization</strong>: XRD, XRR, AFM, FESEM, TEM, XPS</li>
+  <li>
+<strong>Magnetic Characterization</strong>: Broadband FMR, polar-MOKE, VSM, MPMS</li>
+  <li>
+<strong>Computational</strong>: Mumax³ and OOMMF micromagnetic simulations</li>
+</ul>
+
+<h2 id="research-impact">Research Impact</h2>
+
+<p>This work demonstrated that solution-based methods can produce garnet thin films with properties comparable to vacuum-deposited samples, opening pathways for:</p>
+<ul>
+  <li>Cost-effective magnonic device fabrication</li>
+  <li>Integration of magnetic materials with CMOS technology</li>
+  <li>Quantum sensing applications using NV-magnetometry</li>
+  <li>Energy-efficient spintronic memory</li>
+</ul>
+
+<h2 id="awards--recognition">Awards &amp; Recognition</h2>
+
+<ul>
+  <li>
+<strong>Best Poster Award</strong> at 8th International Conference on Nanomaterials for Better Living (NBL 2023), Srinagar, India</li>
+  <li>
+<strong>INSPIRE Fellowship</strong> (2018-2023), Department of Science and Technology, Government of India</li>
+</ul>
+
+<h2 id="collaborative-research">Collaborative Research</h2>
+
+<ul>
+  <li>Visiting Scholar at Northeastern University EQUAL Lab (2024-Present)</li>
+  <li>Postdoctoral Fellow at Howard University Quantum Materials Modeling Lab (2024-Present)</li>
+</ul>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
 
   <picture>
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/projects/label_noise.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="label noise" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/publication_preview/jmmm.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
 </figure>
 
-	</div>
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/publication_preview/matlet.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+    </div>
 </div>
 <div class="caption">
-    Examples of Noisy Labels. Source: https://arxiv.org/pdf/1711.00583v1.pdf
+    Left: Interfacial skyrmion structure. Right: TmIG thin film magnetic properties.
 </div>
-
-<p>Checkout the following papers to know more:</p>
-
-<div class="publications">
-<ol class="bibliography"></ol>
-</div>
-
 
           </article>
 

@@ -94,11 +94,11 @@
               <li class="nav-item ">
                 <a class="nav-link" href="/conferences/">Conferences</a>
               </li>
-
-              <!-- Blog -->
+<!-- Blog -->
               <li class="nav-item ">
                 <a class="nav-link" href="/blog/">Blogs</a>
               </li>
+              
 
               <!-- Toogle theme mode -->
               <li class="toggle-container">
@@ -118,6 +118,23 @@
           <span class="progress-bar"></span>
         </div>
       </progress>
+
+    <!-- Mobile menu auto-close on link click -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const navbarCollapse = document.getElementById('navbarNav');
+        const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+        navLinks.forEach(function(link) {
+          link.addEventListener('click', function() {
+            if (window.innerWidth <= 992 && navbarCollapse.classList.contains('show')) {
+              const navbarToggler = document.querySelector('.navbar-toggler');
+              navbarToggler.click();
+            }
+          });
+        });
+      });
+    </script>
     </header>
 
 
@@ -141,6 +158,32 @@
     <a id="Ph.D."></a><h2 class="category">Ph.D.</h2>
   <!-- Generate cards for each project -->
   <div class="grid">
+<!-- _includes/projects.html -->
+<div class="grid-sizer"></div>
+<div class="grid-item">
+  <a href="/projects/PhD/">
+      <div class="card hoverable">
+<figure>
+
+  <picture>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/projects/phd_research.png" width="auto" height="auto" alt="project thumbnail" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+        <div class="card-body">
+          <h2 class="card-title text-lowercase">Magnetic Thin Films for Spintronics</h2>
+          <p class="card-text">Synthesis and characterization of high-anisotropy iron garnets for spintronics and quantum applications</p>
+          <div class="row ml-1 mr-1 p-0">
+          </div>
+        </div>
+      </div>
+    </a>
+</div>
   </div>
     <a id="Project"></a><h2 class="category">Project</h2>
   <!-- Generate cards for each project -->
@@ -223,8 +266,8 @@
 </figure>
 
         <div class="card-body">
-          <h2 class="card-title text-lowercase">Raman Scattering</h2>
-          <p class="card-text">Calibration of polychromator for Thomson scattering using Raman scattering</p>
+          <h2 class="card-title text-lowercase">Plasma Diagnostics</h2>
+          <p class="card-text">Raman scattering and polychromator calibration for plasma edge diagnostics</p>
           <div class="row ml-1 mr-1 p-0">
           </div>
         </div>

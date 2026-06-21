@@ -10,9 +10,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Raman Scattering | Rajnandini  Sharma</title>
+    <title>Plasma Diagnostics | Rajnandini  Sharma</title>
     <meta name="author" content="Rajnandini  Sharma">
-    <meta name="description" content="Calibration of polychromator for Thomson scattering using Raman scattering">
+    <meta name="description" content="Raman scattering and polychromator calibration for plasma edge diagnostics">
     <meta name="keywords" content="magnetic materials, spintronics, magnonics, simulation">
 
 
@@ -93,11 +93,11 @@
               <li class="nav-item ">
                 <a class="nav-link" href="/conferences/">Conferences</a>
               </li>
-
-              <!-- Blog -->
+<!-- Blog -->
               <li class="nav-item ">
                 <a class="nav-link" href="/blog/">Blogs</a>
               </li>
+              
 
               <!-- Toogle theme mode -->
               <li class="toggle-container">
@@ -117,6 +117,23 @@
           <span class="progress-bar"></span>
         </div>
       </progress>
+
+    <!-- Mobile menu auto-close on link click -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const navbarCollapse = document.getElementById('navbarNav');
+        const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+        navLinks.forEach(function(link) {
+          link.addEventListener('click', function() {
+            if (window.innerWidth <= 992 && navbarCollapse.classList.contains('show')) {
+              const navbarToggler = document.querySelector('.navbar-toggler');
+              navbarToggler.click();
+            }
+          });
+        });
+      });
+    </script>
     </header>
 
 
@@ -127,18 +144,45 @@
         <div class="post">
 
           <header class="post-header">
-            <h1 class="post-title">Raman Scattering</h1>
-            <p class="post-description">Calibration of polychromator for Thomson scattering using Raman scattering</p>
+            <h1 class="post-title">Plasma Diagnostics</h1>
+            <p class="post-description">Raman scattering and polychromator calibration for plasma edge diagnostics</p>
           </header>
 
           <article>
-            <!-- Spurious correlations that degrade model generalization or lead the model to be right for the wrong reasons are one of the main robustness concerns for real-world deployments.  -->
+            <p>This summer internship project was conducted at the Institute for Plasma Research (IPR), Gandhinagar, India, providing my first exposure to experimental physics research and optical spectroscopy techniques.</p>
 
-<p>I have worked as a summer intern at the <b>Institute for Plasma research, Gandhinagar, India</b>, where I delved into the plasma diagnostics division. This experience, which entailed measuring temperature and plasma density in the SST-1 Tokamak using laser-based Thomson scattering, was my initial direct exposure to the research environment. The project,’ Calibration of polychromator for Thomson scattering using Raman scattering,’ equipped me with the skills to design experiments, calibrate bandpass filters and detectors, and record final gains.</p>
+<h2 id="research-context">Research Context</h2>
 
-<div class="row justify-content-sm-center">
-	<div class="col-sm-10 mt-3 mt-md-0">
-	    <figure>
+<p>Plasma edge diagnostics are critical for understanding plasma-wall interactions and impurity transport in fusion devices. Raman scattering and optical emission spectroscopy serve as non-invasive diagnostic tools for measuring plasma parameters such as temperature, density, and composition.</p>
+
+<h2 id="project-objectives">Project Objectives</h2>
+
+<p>The internship focused on calibrating a polychromator system for Thomson scattering measurements and exploring Raman scattering techniques for plasma diagnostics applications. The goal was to establish reliable spectral calibration procedures for accurate plasma parameter extraction.</p>
+
+<h2 id="technical-work">Technical Work</h2>
+
+<ul>
+  <li>
+<strong>Polychromator Calibration</strong>: Wavelength calibration using standard spectral lamps and monochromatic laser sources</li>
+  <li>
+<strong>Raman Spectroscopy Setup</strong>: Alignment and optimization of Raman scattering collection optics</li>
+  <li>
+<strong>Data Analysis</strong>: Processing spectral data to extract calibration curves and verify measurement accuracy</li>
+  <li>
+<strong>Instrument Characterization</strong>: Determining spectral resolution, sensitivity, and noise characteristics</li>
+</ul>
+
+<h2 id="learning-outcomes">Learning Outcomes</h2>
+
+<p>This internship provided hands-on experience with advanced optical diagnostic techniques and introduced me to the challenges of spectroscopic measurements in plasma physics environments. Working with high-precision instrumentation and data analysis workflows established foundational skills for my subsequent research in materials characterization.</p>
+
+<h2 id="skills-demonstrated">Skills Demonstrated</h2>
+
+<p>Optical alignment, spectroscopic calibration, Raman spectroscopy, polychromator operation, data acquisition and analysis, experimental troubleshooting</p>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
 
   <picture>
     
@@ -150,9 +194,8 @@
 
 </figure>
 
-	</div>
+    </div>
 </div>
-
 
           </article>
 
