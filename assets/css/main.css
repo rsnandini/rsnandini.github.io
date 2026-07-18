@@ -615,6 +615,26 @@ footer.sticky-bottom {
   margin-top: -1rem;
   margin-bottom: 0.2rem;
   text-align: right;
+  scroll-margin-top: 80px;
+}
+.publications .year-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+.publications .year-nav .year-nav-link {
+  display: inline-block;
+  padding: 0.25rem 1rem;
+  border: 1px solid var(--global-text-color);
+  border-radius: 1rem;
+  color: var(--global-text-color);
+  font-size: 0.9rem;
+}
+.publications .year-nav .year-nav-link:hover {
+  color: var(--global-theme-color);
+  border-color: var(--global-theme-color);
+  text-decoration: none;
 }
 .publications ol.bibliography {
   list-style: none;
