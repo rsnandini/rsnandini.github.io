@@ -12,7 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Publications | Rajnandini  Sharma</title>
     <meta name="author" content="Rajnandini  Sharma">
-    <meta name="description" content="&lt;h6&gt;For the complete list, please see my &lt;b&gt;&lt;a href='https://scholar.google.com/citations?user=ohlvGxYAAAAJ&amp;hl=en'&gt;Google Scholar Profile&lt;/a&gt;&lt;/b&gt;. Click to see the publications year wise.&lt;/h6&gt;">
+    <meta name="description" content="&lt;h6&gt;For the complete list, please see my &lt;b&gt;&lt;a href='https://scholar.google.com/citations?user=ohlvGxYAAAAJ&amp;hl=en'&gt;Google Scholar Profile&lt;/a&gt;&lt;/b&gt;. Click on the years to see the publications year wise.&lt;/h6&gt;">
     <meta name="keywords" content="magnetic materials, spintronics, magnonics, simulation">
 
 
@@ -146,7 +146,7 @@
           <header class="post-header">
             <h1 class="post-title">Publications</h1>
             <p class="post-description"></p>
-<h6>For the complete list, please see my <b><a href="https://scholar.google.com/citations?user=ohlvGxYAAAAJ&amp;hl=en" rel="external nofollow noopener" target="_blank">Google Scholar Profile</a></b>. Click to see the publications year wise.</h6>
+<h6>For the complete list, please see my <b><a href="https://scholar.google.com/citations?user=ohlvGxYAAAAJ&amp;hl=en" rel="external nofollow noopener" target="_blank">Google Scholar Profile</a></b>. Click on the years to see the publications year wise.</h6>
           </header>
 
           <article>
@@ -1172,40 +1172,7 @@
 </li></ol>
 
 
-<button id="pubBackToTop" class="back-to-top" aria-label="Back to top" title="Back to top">
-  <i class="fas fa-arrow-up"></i>
-</button>
-
 </div>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    var backToTop = document.getElementById('pubBackToTop');
-    var yearLinks = document.querySelectorAll('.year-nav-link');
-
-    function toggleBackToTop() {
-      if (window.pageYOffset > 300) {
-        backToTop.classList.add('visible');
-      } else {
-        backToTop.classList.remove('visible');
-      }
-    }
-
-    window.addEventListener('scroll', toggleBackToTop);
-    toggleBackToTop();
-
-    yearLinks.forEach(function (link) {
-      link.addEventListener('click', function () {
-        backToTop.classList.add('visible');
-      });
-    });
-
-    backToTop.addEventListener('click', function () {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-  });
-</script>
-
 
               <div class="social mt-5">
                 <div class="contact-icons">
@@ -1235,6 +1202,44 @@
         © Copyright 2026 Rajnandini  Sharma. 
       </div>
     </footer>
+
+    <!-- Back to top button -->
+    <!-- _includes/scripts/backToTop.html -->
+<button id="backToTop" class="back-to-top" aria-label="Back to top" title="Back to top">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var backToTop = document.getElementById('backToTop');
+    var yearLinks = document.querySelectorAll('.year-nav-link');
+
+    function toggleBackToTop() {
+      var scrollable = document.documentElement.scrollHeight - window.innerHeight;
+      var scrolledRatio = scrollable > 0 ? window.pageYOffset / scrollable : 0;
+      if (scrolledRatio >= 0.5) {
+        backToTop.classList.add('visible');
+      } else {
+        backToTop.classList.remove('visible');
+      }
+    }
+
+    window.addEventListener('scroll', toggleBackToTop);
+    window.addEventListener('resize', toggleBackToTop);
+    toggleBackToTop();
+
+    yearLinks.forEach(function (link) {
+      link.addEventListener('click', function () {
+        backToTop.classList.add('visible');
+      });
+    });
+
+    backToTop.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  });
+</script>
+
 
     <!-- JavaScripts -->
     <!-- jQuery -->

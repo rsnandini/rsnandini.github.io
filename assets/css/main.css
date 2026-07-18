@@ -450,6 +450,33 @@ footer.sticky-bottom {
   font-size: 0.9rem;
 }
 
+.back-to-top {
+  position: fixed;
+  right: 1.5rem;
+  bottom: 3.5rem;
+  z-index: 1035;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+  border: 1px solid var(--global-divider-color);
+  background-color: var(--global-bg-color);
+  color: var(--global-text-color);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
+}
+.back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.back-to-top:hover {
+  color: var(--global-theme-color);
+  border-color: var(--global-theme-color);
+}
+
 .cv {
   margin-bottom: 40px;
 }
@@ -635,32 +662,6 @@ footer.sticky-bottom {
   color: var(--global-theme-color);
   border-color: var(--global-theme-color);
   text-decoration: none;
-}
-.publications .back-to-top {
-  position: fixed;
-  right: 1.5rem;
-  bottom: 1.5rem;
-  z-index: 1000;
-  width: 2.75rem;
-  height: 2.75rem;
-  border-radius: 50%;
-  border: 1px solid var(--global-divider-color);
-  background-color: var(--global-bg-color);
-  color: var(--global-text-color);
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(10px);
-  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
-}
-.publications .back-to-top.visible {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
-}
-.publications .back-to-top:hover {
-  color: var(--global-theme-color);
-  border-color: var(--global-theme-color);
 }
 .publications ol.bibliography {
   list-style: none;
