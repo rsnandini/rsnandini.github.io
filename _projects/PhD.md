@@ -3,6 +3,7 @@ layout: page
 title: Magnetic Thin Films for Spintronics
 description: Synthesis and characterization of high-anisotropy iron garnets for spintronics and quantum applications
 img: assets/img/projects/phd_research.png
+img: assets/img/projects/Project.png
 importance: 1
 category: Ph.D.
 ---
