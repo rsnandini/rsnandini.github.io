@@ -13,8 +13,16 @@ social: true
 <!-- _pages/publications.md -->
 <div class="publications">
 
+<nav class="year-nav">
+  {%- for y in page.years -%}
+    {%- capture y_str -%}{{ y }}{%- endcapture -%}
+    <a href="#y-{{ y_str | slugify }}" class="year-nav-link">{{ y }}</a>
+  {%- endfor -%}
+</nav>
+
 {%- for y in page.years %}
-  <h2 class="year">{{y}}</h2>
+  {%- capture y_str -%}{{ y }}{%- endcapture -%}
+  <h2 class="year" id="y-{{ y_str | slugify }}">{{y}}</h2>
   {% bibliography -f {{ site.scholar.bibliography }} -q @*[year={{y}}]* %}
 {% endfor %}
 
