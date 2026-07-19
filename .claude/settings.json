@@ -3,7 +3,24 @@
     "allow": [
       "Bash(git commit -m ' *)",
       "Bash(bundle exec *)",
-      "Bash(grep -o \"back-to-top[^;]\\\\{0,300\\\\}\" _site/assets/css/main.css)"
+      "Bash(grep -o \"back-to-top[^;]\\\\{0,300\\\\}\" _site/assets/css/main.css)",
+      "Bash(echo \"started with PID $!\")",
+      "Bash(cat /tmp/jekyll.log 2>&1 | tail -40; echo \"---\"; ps aux | grep -i jekyll | grep -v grep)",
+      "Read(//tmp/**)",
+      "Read(//c/Program Files/Google/Chrome/Application//**)",
+      "Read(//c/Program Files \\\\\\(x86\\\\\\)/Microsoft/Edge/Application//**)",
+      "Bash(mkdir -p \"/c/Users/pravi/AppData/Local/Temp/claude/f--RJ-stuffs-RJ-site/b722a186-21b7-4382-8ff7-9d3bca95cb5b/scratchpad\")",
+      "Bash(\"/c/Program Files/Google/Chrome/Application/chrome.exe\" --headless=new --disable-gpu --hide-scrollbars --window-size=1440,1800 --screenshot=\"C:/Users/pravi/AppData/Local/Temp/claude/f--RJ-stuffs-RJ-site/b722a186-21b7-4382-8ff7-9d3bca95cb5b/scratchpad/roboto-preview.png\" \"http://127.0.0.1:4000/\")",
+      "Read(//c/Users/pravi/AppData/Local/Temp/claude/f--RJ-stuffs-RJ-site/b722a186-21b7-4382-8ff7-9d3bca95cb5b/scratchpad//**)",
+      "Bash(curl -s http://127.0.0.1:4000/assets/css/main.css)",
+      "Bash(curl -s http://127.0.0.1:4000/publications/)",
+      "Bash(gem contents *)",
+      "Bash(grep -i \"\\\\.rb$\")",
+      "Read(//c/Ruby32-x64/lib/ruby/gems/3.2.0/gems/jekyll-scholar-7.3.0/lib/jekyll/scholar/tags/**)",
+      "Read(//c/Ruby32-x64/lib/ruby/gems/3.2.0/gems/jekyll-scholar-7.3.0/lib/jekyll/scholar/**)",
+      "Bash(curl -s http://127.0.0.1:4000/)",
+      "Bash(curl -s \"https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css\" -o /tmp/bs.css)",
+      "Bash(grep -oE 'h1,\\\\s*h2,\\\\s*h3,\\\\s*h4,\\\\s*h5,\\\\s*h6\\\\{[^}]*\\\\}|\\\\.post-title\\\\{[^}]*\\\\}|\\\\.nav-link\\\\{[^}]*\\\\}|\\\\.title\\\\{[^}]*font-weight:500[^}]*\\\\}')"
     ]
   }
 }
