@@ -128,6 +128,7 @@ body.sticky-bottom-footer {
  * Styles for the base elements of the theme.
  ******************************************************************************/
 body {
+  font-family: "Roboto", -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   line-height: 1.6;
 }
 
@@ -848,7 +849,7 @@ progress {
   z-index: 10;
   /* Dimensions */
   width: 100%;
-  height: 1px;
+  height: 4px;
   /* Reset the appearance */
   -webkit-appearance: none;
   -moz-appearance: none;
